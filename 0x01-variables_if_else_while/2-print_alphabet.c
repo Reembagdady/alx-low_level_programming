@@ -3,24 +3,14 @@
  * main - Entry point
  *
  * Return: always 0
-*/
+ */
 int main(void)
 {
-	int n1;
-	int n2;
+	char c;
 
-	for (n1 = 0; n1 < 10; n1++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		for (n2 = n1 + 1; n2 < 10; n2++)
-		{
-			putchar(n1 + '0');
-			putchar(n2 + '0');
-			if (n1 < 8)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
